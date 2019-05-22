@@ -1,0 +1,6 @@
+framework module Pods_3x3ConnectAssignmentTests {
+  umbrella header "Pods-3x3ConnectAssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
