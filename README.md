@@ -15,4 +15,17 @@ New items appear at the bottom, and the while there is not enough content to fil
 Setps to run Project
 
 STEP 1 
-git clone 
+Need a Mac System and Open terminal
+
+STEP 2 
+go to the suitable folder where you want to download project then type in terminal
+git clone https://github.com/saikatpratian/3x3ConnectAssignment.git
+
+STEP 3
+open workspace in xcode
+
+STEP 4
+Run in simulator Prefered 8 plus
+
+STEP 5
+If u want to run in device feel free to add your apple developer ID for signing
