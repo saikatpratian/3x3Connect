@@ -1,4 +1,4 @@
-# 3x3Connect
+# 3x3ConnectAssignment
 
 Objective: To populate data from bottom - right in collectionView
 Solution: By default we are using UICollectionViewFlawLayout, and this doesn't have logic to populate data from bottom - right, it only works in a TOP-LEFT BOTTOM-RIGHT order. To do that you have to build our own layout, which we can do creating a new object that inherits from UICollectionViewLayout.
