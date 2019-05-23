@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806EBFA2296B544005DCA67 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806EBF92296B544005DCA67 /* Player.swift */; };
 		184099032293F5320043832D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184099022293F5320043832D /* AppDelegate.swift */; };
 		184099082293F5320043832D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184099062293F5320043832D /* Main.storyboard */; };
 		1840990D2293F5340043832D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1840990C2293F5340043832D /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		1840991B2293F5340043832D /* _x3ConnectAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840991A2293F5340043832D /* _x3ConnectAssignmentTests.swift */; };
 		184099262293F5340043832D /* _x3ConnectAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184099252293F5340043832D /* _x3ConnectAssignmentUITests.swift */; };
 		184099402293FCA00043832D /* SoccerPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840993F2293FCA00043832D /* SoccerPlayerViewController.swift */; };
-		1840997C2293FDDA0043832D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840997B2293FDDA0043832D /* Player.swift */; };
 		1840997E2293FDFE0043832D /* SoccerPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840997D2293FDFE0043832D /* SoccerPlayerCell.swift */; };
 		18409981229401550043832D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18409980229401550043832D /* GoogleService-Info.plist */; };
 		18409987229415630043832D /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18409986229415630043832D /* UIImageView+Extension.swift */; };
@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0DF5EB30F9A253D72E3C0810 /* Pods-3x3ConnectAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3x3ConnectAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-3x3ConnectAssignmentUITests/Pods-3x3ConnectAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1806EBF92296B544005DCA67 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		184098FF2293F5320043832D /* 3x3ConnectAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3x3ConnectAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184099022293F5320043832D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184099072293F5320043832D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		184099252293F5340043832D /* _x3ConnectAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _x3ConnectAssignmentUITests.swift; sourceTree = "<group>"; };
 		184099272293F5340043832D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1840993F2293FCA00043832D /* SoccerPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoccerPlayerViewController.swift; sourceTree = "<group>"; };
-		1840997B2293FDDA0043832D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1840997D2293FDFE0043832D /* SoccerPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoccerPlayerCell.swift; sourceTree = "<group>"; };
 		18409980229401550043832D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18409986229415630043832D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -99,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1806EBF82296B527005DCA67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1806EBF92296B544005DCA67 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		184098F62293F5320043832D = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +135,7 @@
 				184099022293F5320043832D /* AppDelegate.swift */,
 				184099792293FCEF0043832D /* Storyboards & Xibs */,
 				1840997F2293FE050043832D /* View */,
-				1840993B2293FC920043832D /* Models */,
+				1806EBF82296B527005DCA67 /* Model */,
 				1840993E2293FCA00043832D /* View Controllers */,
 				1840997A2293FD0C0043832D /* Supporting Files */,
 				1840993A2293FC8C0043832D /* Layouts */,
@@ -168,15 +176,6 @@
 				1840998822941E8C0043832D /* ReverseLayout.swift */,
 			);
 			path = Layouts;
-			sourceTree = "<group>";
-		};
-		1840993B2293FC920043832D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1840997B2293FDDA0043832D /* Player.swift */,
-			);
-			name = Models;
-			path = ../../../Downloads/Starter_Project/Pinterest/Models;
 			sourceTree = "<group>";
 		};
 		1840993E2293FCA00043832D /* View Controllers */ = {
@@ -469,10 +468,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18409987229415630043832D /* UIImageView+Extension.swift in Sources */,
-				1840997C2293FDDA0043832D /* Player.swift in Sources */,
 				184099032293F5320043832D /* AppDelegate.swift in Sources */,
 				1840998922941E8C0043832D /* ReverseLayout.swift in Sources */,
 				184099402293FCA00043832D /* SoccerPlayerViewController.swift in Sources */,
+				1806EBFA2296B544005DCA67 /* Player.swift in Sources */,
 				1840997E2293FDFE0043832D /* SoccerPlayerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
